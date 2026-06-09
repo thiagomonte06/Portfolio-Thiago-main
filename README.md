@@ -42,9 +42,10 @@ Apesar de ser um portfólio focado no meu perfil **Back-end**, a interface foi c
 ```
 💻 Como Rodar o Projeto Localmente
 Clone este repositório:
-
+```text
 Bash
 git clone [https://github.com/thiagomonte06/Portfolio-Thiago-main.git](https://github.com/thiagomonte06/Portfolio-Thiago-main.git)
+```
 Navegue até a pasta do projeto.
 
 Como o projeto utiliza caminhos absolutos para os assets e páginas (ex: /css/style.css), recomenda-se abrir o projeto utilizando um servidor local para evitar quebras de caminhos.
@@ -54,7 +55,7 @@ Se usar o VS Code, basta clicar com o botão direito no index.html e selecionar 
 ✉️ Contato
 Se quiser trocar uma ideia sobre APIs, arquitetura de sistemas ou automações, fique à vontade para me acionar:
 
-LinkedIn: linkedin.com/in/thiagohsmonte
+LinkedIn: https://linkedin.com/in/thiagohsmonte
 
 E-mail: montethiago06@gmail.com
 
