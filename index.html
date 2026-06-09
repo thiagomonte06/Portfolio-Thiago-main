@@ -1,0 +1,298 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Thiago Monte | Back-end Journey</title>
+
+  <link rel="stylesheet" href="/css/style.css" />
+  <link rel="stylesheet" href="/css/blog.css" />
+  <link rel="stylesheet" href="/css/uses.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="icon" type="image/png" href="/assets/img/favicon.png" />
+</head>
+<body>
+
+  <canvas id="bg-canvas"></canvas>
+
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a href="#top" class="brand">
+        <span class="brand-mark"></></span>
+        <span class="brand-name">Thiago Monte</span>
+      </a>
+      <nav class="top-nav">
+        <a href="#hero"     class="top-link active">Início</a>
+        <a href="#about"    class="top-link">Sobre</a>
+        <a href="#skills"   class="top-link">Skills</a>
+        <a href="#projects" class="top-link">Projetos</a>
+        <a href="#contact"  class="top-link">Contato</a>
+        <a href="/paginas/blog.html"  class="top-link">Blog</a>
+        <a href="/paginas/uses.html"  class="top-link">Setup</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <div class="timeline">
+      <div class="timeline-axis">
+        <div class="timeline-track"></div>
+        <div class="timeline-marker" id="timeline-marker"></div>
+      </div>
+
+      <!-- HERO NODE -->
+      <section class="node hero-node" id="hero" data-node>
+        <div class="node-content hero-content">
+          <div class="hero-left">
+            <p class="hero-eyebrow">Início da jornada</p>
+            <h1 class="hero-title">
+              <span>Thiago</span>
+              <span>Monte</span>
+              <span> - </span>
+              <span>Uma Jornada pelo BackEnd</span>
+            </h1>
+            <p class="hero-text">
+              Olá, eu sou <strong>Thiago Monte</strong>, desenvolvedor focado em back end e integrações.
+              Este portfólio é a linha do tempo da minha jornada: rolando a página,
+              você acompanha cada etapa do que sei e do que estou construindo.
+            </p>
+            <div class="hero-actions">
+              <a href="#projects" class="btn primary">Ver projetos</a>
+              <a href="#contact"  class="btn ghost">Marcar uma conversa</a>
+            </div>
+          </div>
+          <div class="hero-right">
+            <div class="hero-card">
+              <div class="hero-photo">
+                <img
+                  src="/assets/img/logo.jpeg"
+                  alt="Foto de Thiago Monte"
+                  id="avatar-img"
+                  onerror="this.style.display='none';document.getElementById('avatar-fallback').style.display='flex';"
+                />
+                <div class="avatar-fallback" id="avatar-fallback">TM</div>
+              </div>
+              <div class="hero-meta">
+                <span class="hero-role">Back-end Developer</span>
+                <span class="hero-location"><i class="fas fa-location-dot"></i> Recife · BR</span>
+              </div>
+              <div class="hero-stack">
+                <span>Python</span>
+                <span>MySQL</span>
+                <span>HTML5+CSS3</span>
+              </div>
+              <div class="hero-socials">
+                <a href="https://github.com/thiagomonte06" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="linkedin.com/in/thiagohsmonte" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="mailto:montethiago06@gmail.com"><i class="fas fa-envelope"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ABOUT NODE -->
+      <section class="node" id="about" data-node>
+        <div class="node-badge">Sobre</div>
+        <div class="node-content">
+          <div class="two-columns">
+            <div>
+              <h2>Quem é o Thiago por trás do código?</h2>
+              <p>
+                Sou um desenvolvedor back end que gosta de resolver problemas reais
+                e não apenas escrever código bonito. Curto entender o contexto do projeto,
+                o impacto do que estou construindo e como aquilo encaixa no resto do sistema.
+              </p>
+              <p>
+                Tenho interesse em <strong>arquitetura de APIs</strong>, <strong>automação de processos</strong>
+                e em usar IAs como ferramentas de trabalho, não como muletas.
+              </p>
+            </div>
+            <div>
+              <h3>Como eu penso software</h3>
+              <ul class="about-list">
+                <li><span>Primeiro clareza, depois performance. Otimizar o que não está claro é receita para bugs.</span></li>
+                <li><span>Pequenos commits, mensagens decentes e código que outra pessoa consegue ler.</span></li>
+                <li><span>Automatizar o que é repetitivo: testes, scripts, tarefas de rotina.</span></li>
+                <li><span>Café sempre por perto.</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SKILLS NODE -->
+      <section class="node" id="skills" data-node>
+        <div class="node-badge">Skills</div>
+        <div class="node-content">
+          <h2>Mapa de Skills</h2>
+          <p class="node-intro">
+            Em vez de colocar nível em porcentagem, aqui estão as tecnologias com que tenho contato hoje.
+          </p>
+          <div class="skill-matrix">
+
+            <div class="skill-column">
+              <h3>Back End</h3>
+              <ul class="skill-list">
+                <li>Node.js</li>
+                <li>APIs REST</li>
+                <li>Python</li>
+              </ul>
+            </div>
+
+            <div class="skill-column">
+              <h3>Dados</h3>
+              <ul class="skill-list">
+                <li>SQL (PostgreSQL/MySQL)</li>
+                <li>MongoDB</li>
+              </ul>
+            </div>
+
+            <div class="skill-column">
+              <h3>Outros</h3>
+              <ul class="skill-list">
+                <li>Git & GitHub</li>
+                <li>HTML/CSS/JS</li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- PROJECTS NODE -->
+      <section class="node" id="projects" data-node>
+        <div class="node-badge">Projetos</div>
+        <div class="node-content">
+          <h2>Projetos em que estou colocando a mão</h2>
+          <p class="node-intro">
+            Os projetos abaixo representam o que realmente faço: APIs, automações e pequenos
+            sistemas que conectam serviços diferentes.
+          </p>
+
+          <!--
+          ========================================
+          LISTA DE PROJETOS (EM CONSTRUÇÃO TEMPORARIAMENTE)
+          ========================================
+          <div class="project-list">
+            <article class="project-item"> ... </article>
+            <article class="project-item"> ... </article>
+          </div>
+          ========================================
+          FIM DA LISTA DE PROJETOS
+          ========================================
+          -->
+
+          <div class="project-list">
+            <article class="project-item">
+              <header>
+                <span class="project-chip soon">Em construção</span>
+                <h3>Em breve aqui entram meus projetos</h3>
+              </header>
+              <p>
+                No momento, estou montando e organizando meus primeiros projetos públicos.
+                Assim que tiver algo que represente bem meu trabalho, você vai ver por aqui.
+              </p>
+              <div class="project-links">
+                <span class="project-note">
+                  Enquanto isso, podemos conversar sobre o que você precisa construir.
+                </span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT NODE -->
+      <section class="node" id="contact" data-node>
+        <div class="node-badge">Contato</div>
+        <div class="node-content">
+          <h2>Vamos conversar?</h2>
+          <p class="node-intro">
+            Se você tem uma ideia de sistema, precisa de uma API ou quer só trocar ideia
+            sobre back end, me manda uma mensagem.
+          </p>
+
+          <div class="contact-grid">
+            <div class="contact-info">
+              <div class="contact-line">
+                <i class="fas fa-envelope"></i>
+                <div>
+                  <p class="label">Email</p>
+                  <a href="mailto:montethiago06@gmail.com">montethiago06@gmail.com</a>
+                </div>
+              </div>
+              <div class="contact-line">
+                <i class="fab fa-linkedin"></i>
+                <div>
+                  <p class="label">LinkedIn</p>
+                  <a href="linkedin.com/in/thiagohsmonte" target="_blank">
+                    linkedin.com/in/ThiagoMonte
+                  </a>
+                </div>
+              </div>
+              <div class="contact-line">
+                <i class="fab fa-github"></i>
+                <div>
+                  <p class="label">GitHub</p>
+                  <a href="https://github.com/thiagomonte06" target="_blank">
+                    github.com/thiagomonte06
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <form
+              class="contact-form"
+              id="contact-form"
+              action="https://formsubmit.co/montethiago06@gmail.com"
+              method="POST"
+            >
+              <input type="hidden" name="_subject" value="Contato pelo portfólio - Thiago Monte" />
+              <input type="hidden" name="_captcha" value="false" />
+              <input type="hidden" name="_template" value="table" />
+
+              <div class="field">
+                <label for="name">Nome</label>
+                <input type="text" id="name" name="name" required />
+              </div>
+              <div class="field">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required />
+              </div>
+              <div class="field">
+                <label for="subject">Assunto</label>
+                <input type="text" id="subject" name="subject" required />
+              </div>
+              <div class="field">
+                <label for="message">Mensagem</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+              </div>
+
+              <button type="submit" class="btn primary btn-full" id="submit-btn">
+                <span id="btn-text"><i class="fas fa-paper-plane"></i> Enviar</span>
+                <span id="btn-loading" style="display:none;"><i class="fas fa-spinner fa-spin"></i> Enviando...</span>
+              </button>
+
+              <p class="form-feedback" id="form-feedback"></p>
+            </form>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Thiago Monte · Back-end Journey</p>
+  </footer>
+
+  <button class="scroll-top" id="scroll-top" aria-label="Voltar ao topo">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <script src="/sistemas/script.js"></script>
+</body>
+</html>

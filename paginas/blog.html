@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog · Thiago Monte</title>
+  <link rel="stylesheet" href="/css/style.css" />
+  <link rel="stylesheet" href="/css/blog.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="icon" type="image/png" href="assets/img/favicon.png" />
+</head>
+<body>
+  <canvas id="bg-canvas"></canvas>
+
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a href="/index.html" class="brand">
+        <span class="brand-mark"></></span>
+        <span class="brand-name">Thiago Monte</span>
+      </a>
+      <nav class="top-nav">
+        <a href="/index.html" class="top-link">Início</a>
+        <a href="/paginas/blog.html" class="top-link active">Blog</a>
+        <a href="/paginas/uses.html" class="top-link">Setup</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page-main">
+    <div class="page-header">
+      <p class="hero-eyebrow">Escrito por mim</p>
+      <h1>Blog & Aprendizados</h1>
+      <p class="page-subtitle">
+        Notas do que estou estudando, erros que cometi e o que aprendi com eles.
+        Sem pretensão de ser tutorial — é só o meu caderno público.
+      </p>
+    </div>
+
+    <div class="blog-grid">
+
+      <!-- POST DESTACADO -->
+      <article class="blog-card featured">
+        <div class="blog-card-meta">
+          <span class="blog-chip soon">Em breve</span>
+          <time>Junho, 2026</time>
+        </div>
+        <h2>Por que comecei pelo Back End</h2>
+        <p>
+          A maioria começa pelo front: vê resultado rápido, fica animado. Eu fui pelo
+          caminho contrário. Esse post conta o raciocínio por trás disso e o que aprendi
+          nas primeiras semanas.
+        </p>
+        <div class="blog-card-footer">
+          <span class="blog-note">
+            <i class="fas fa-pencil"></i> Rascunho em andamento
+          </span>
+        </div>
+      </article>
+
+      <!-- POST NORMAL -->
+      <article class="blog-card">
+        <div class="blog-card-meta">
+          <span class="blog-chip soon">Em breve</span>
+          <time>Junho, 2026</time>
+        </div>
+        <h2>Git na prática: o que nenhum tutorial me contou</h2>
+        <p>
+          Commits, branches, merge conflicts — e como parei de ter medo de
+          estragar o repositório.
+        </p>
+        <div class="blog-card-footer">
+          <span class="blog-note">
+            <i class="fas fa-pencil"></i> Rascunho em andamento
+          </span>
+        </div>
+      </article>
+
+      <!-- POST NORMAL -->
+      <article class="blog-card">
+        <div class="blog-card-meta">
+          <span class="blog-chip soon">Em breve</span>
+          <time>Maio, 2026</time>
+        </div>
+        <h2>Primeiros passos com APIs REST usando Python</h2>
+        <p>
+          Como montei minha primeira API funcional, os erros clássicos de rota e
+          status code, e como o Postman salvou minha sanidade.
+        </p>
+        <div class="blog-card-footer">
+          <span class="blog-note">
+            <i class="fas fa-pencil"></i> Rascunho em andamento
+          </span>
+        </div>
+      </article>
+
+      <!-- POST NORMAL -->
+      <article class="blog-card">
+        <div class="blog-card-meta">
+          <span class="blog-chip soon">Em breve</span>
+          <time>Maio, 2026</time>
+        </div>
+        <h2>SQL do zero: queries que realmente uso</h2>
+        <p>
+          Esqueça decorar sintaxe. Esse post é sobre entender quando usar JOIN,
+          quando evitar subquery e como o índice mudou minha visão de banco de dados.
+        </p>
+        <div class="blog-card-footer">
+          <span class="blog-note">
+            <i class="fas fa-pencil"></i> Rascunho em andamento
+          </span>
+        </div>
+      </article>
+
+    </div>
+
+    <div class="blog-cta">
+      <p>Quer ser avisado quando os posts saírem?</p>
+      <a href="/index.html#contact" class="btn primary">Me manda um email</a>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>© <span class="year-auto"></span> Thiago Monte · Back-end Journey</p>
+  </footer>
+
+  <button class="scroll-top" id="scroll-top" aria-label="Voltar ao topo">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <script src="/sistemas/script.js"></script>
+  <script>
+    // year
+    document.querySelectorAll('.year-auto').forEach(el => el.textContent = new Date().getFullYear());
+  </script>
+</body>
+</html>
